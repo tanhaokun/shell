@@ -1,0 +1,5 @@
+FROM java:8
+VOLUME /tmp
+Add demo1.jar demo1.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/demo1.jar"]
